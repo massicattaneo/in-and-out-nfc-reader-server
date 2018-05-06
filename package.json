@@ -1,0 +1,42 @@
+{
+  "name": "in-and-out-nfc-reader-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js --presets es2015,stage-2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/massicattaneo/in-and-out-nfc-reader-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/massicattaneo/in-and-out-nfc-reader-server/issues"
+  },
+  "dependencies": {
+    "@pokusew/pcsclite": "^0.4.17"
+  },
+  "homepage": "https://github.com/massicattaneo/in-and-out-nfc-reader-server#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-node6": "^0.4.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.0",
+    "chalk": "^1.1.3",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "http-serve": "^1.0.1",
+    "node-fetch": "^1.7.3",
+    "prettyjson": "^1.2.1",
+    "querystring": "^0.2.0",
+    "websocket": "^1.0.24",
+    "winston": "^2.3.1",
+    "ws": "^5.1.1"
+  }
+}
