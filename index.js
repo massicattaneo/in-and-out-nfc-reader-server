@@ -1,12 +1,17 @@
 import express from 'express';
-import http from 'http';
+const https = require('https');
 import WebSocket from 'ws';
 import NfcApp from './src';
-
+const fs = require('fs');
+const path = require('path');
+const httpsOptions = {
+    key: fs.readFileSync(path.resolve(__dirname + '/private/key.pem')),
+    cert: fs.readFileSync(path.resolve(__dirname + '/private/cert.pem'))
+};
 const app = express();
 
 //initialize a simple http server
-const server = http.createServer(app);
+const server = https.createServer(httpsOptions, app);
 
 //initialize the WebSocket server instance
 const wss = new WebSocket.Server({ server });
